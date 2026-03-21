@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    font-family: 'Courier New', 'VT323', monospace;
+    color: #ffffff;
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 1px #1a1a1a, inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* TÍTULO ESTILIZADO "THE GURIS" */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+.terminal-header {
+   font-size: 3rem;
+   font-family: 'Special Elite', 'Courier New', monospace;
+    font-weight: normal;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #666;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #444, 2px 2px 0 #222;
+    background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0.1) 100%);
+    display: inline-block;
+    width: 100%;
+}
+.terminal-header.centered {
+    text-align: center;
+}
+.prompt {
+    color: #aaa;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+.card {
+    background: #0f0f0f;
+    border: 1px solid #2a2a2a;
+    padding: 1rem 1.2rem;
+    margin: 1.5rem 0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.5), 1px 1px 0 #1a1a1a;
+}
+
+h2, h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    border-left: 4px solid #ffffff;
+    padding-left: 8px;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+h3 {
+    font-size: 1.2rem;
+    border-left-width: 3px;
+}
+h4 {
+    font-weight: normal;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #cccccc;
+}
+
+.field {
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+.field-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.field-row .field {
+    flex: 1 1 150px;
+    margin-bottom: 0;
+}
+label {
+    min-width: 80px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #cccccc;
+}
+input, select, button {
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 0;
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: #ffffff;
+    background: #222;
+}
+button {
+    background: #222;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #4a4a4a;
+}
+button:hover {
+    background: #2a2a2a;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+.btn {
+    padding: 6px 14px;
+    margin-top: 0.5rem;
+}
+.btn.small {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+}
+
+/* DIVISÃO DE TREINO DIÁRIA */
+.split-controls {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.split-controls select {
+    background: #1a1a1a;
+    border: 1px solid #4a4a4a;
+    padding: 4px 8px;
+}
+.split-exercises {
+    margin: 1rem 0;
+    border-top: 1px solid #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 0.5rem 0;
+}
+.muscle-group {
+    margin: 1rem 0 1.5rem 0;
+    border-left: 3px solid #ffffff;
+    padding-left: 12px;
+}
+.muscle-group h4 {
+    color: #eeeeee;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+.split-exercise-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px dotted #2a2a2a;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.split-exercise-info {
+    font-family: monospace;
+    font-size: 0.85rem;
+    flex: 2;
+}
+.split-exercise-actions button {
+    background: none;
+    border: 1px solid #5a5a5a;
+    margin-left: 0.3rem;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+}
+
+/* LISTA DE PENDENTES */
+.pending-list {
+    margin-top: 1rem;
+    background: #0f0f0f;
+    padding: 0.8rem;
+    border: 1px solid #2a2a2a;
+}
+.pending-list h4 {
+    margin-bottom: 0.5rem;
+}
+#pendingItems {
+    margin: 0.5rem 0;
+}
+.pending-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    border-bottom: 1px dotted #3a3a3a;
+    font-size: 0.8rem;
+}
+.pending-item .info {
+    flex: 1;
+}
+.pending-item .remove-pending {
+    background: none;
+    border: 1px solid #6a4a4a;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+}
+.pending-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.profile-bar {
+    background: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    padding: 0.6rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.85rem;
+}
+.profile-bar .label {
+    font-weight: bold;
+    color: #cccccc;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.65rem;
+    margin-top: 2rem;
+    color: #6a6a6a;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 0.8rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal-content {
+    background: #0f0f0f;
+    border: 2px solid #ffffff;
+    width: 90%;
+    max-width: 500px;
+    padding: 1.2rem;
+    box-shadow: 4px 4px 0 #000;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+.modal-title {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: #cccccc;
+    padding: 0;
+}
+.close-btn:hover {
+    color: #ffffff;
+}
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    body { padding: 0.8rem; }
+    .container { padding: 1rem; }
+    .field-row { flex-direction: column; gap: 0.5rem; }
+    .profile-bar { flex-direction: column; align-items: flex-start; }
+}
